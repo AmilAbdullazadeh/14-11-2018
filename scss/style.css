@@ -1,0 +1,352 @@
+#navBar {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1031;
+  transition: all 0.5s;
+  background-color: white;
+}
+#navBar .container-fluid .row .logo {
+  float: left;
+  padding: 9px 100px;
+  cursor: pointer;
+}
+#navBar .container-fluid .row .nav-menu .menu-ul {
+  list-style: none;
+  font-weight: 600;
+  margin: 15px;
+}
+#navBar .container-fluid .row .nav-menu .menu-ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+#navBar .container-fluid .row .nav-menu .menu-ul li .dropdown-menu a {
+  font-weight: 600;
+}
+#navBar .container-fluid .row .nav-menu .menu-ul li .dropdown-menu a:hover {
+  transition: all 0.4s ease;
+  background-color: black;
+  color: white;
+}
+
+#home {
+  background: url(../img/slide2.jpg) center center fixed;
+  padding: 55px 0;
+  overflow: hidden;
+  background-position: 50% 29px;
+}
+#home .container-fluid .row .head {
+  width: 100%;
+  height: 615px;
+}
+#home .container-fluid .row .head .logo {
+  text-align: center;
+  bottom: 20px;
+  padding-top: 80px;
+}
+#home .container-fluid .row .head .text h1 {
+  text-align: center;
+  top: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 100px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#home .container-fluid .row .head .text h1 span {
+  color: #3498DB;
+}
+#home .container-fluid .row .head .text-small h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: gray;
+  text-align: center;
+  margin-top: -30px;
+}
+#home .container-fluid .row .head .list {
+  list-style: none;
+  text-align: center;
+}
+#home .container-fluid .row .head .list li {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: gray;
+  display: inline-block;
+  font-size: 13px;
+  font-family: inherit;
+}
+#home .container-fluid .row .head .bottom {
+  text-align: center;
+}
+#home .container-fluid .row .head .bottom img {
+  bottom: 20px;
+}
+#home .container-fluid .row .head .bottom span {
+  display: block;
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#about {
+  padding: 55px 0;
+}
+#about .container-fluid .area1 h1 {
+  text-align: center;
+  width: 100%;
+  line-height: 1.1;
+  padding-top: 60px;
+  font-weight: 600;
+  font-size: 35px;
+  color: #6D6D6D;
+  font-family: 'Open Sans', sans-serif;
+}
+#about .container-fluid .area1 h1 span {
+  color: #3498DB;
+}
+#about .container-fluid .area1 h4 {
+  width: 100%;
+  text-align: center;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 20px 216px;
+  line-height: 20px;
+}
+#about .container-fluid .area2 {
+  padding: 0px 55px;
+}
+#about .container-fluid .area2 .box {
+  text-align: center;
+  margin: 50px auto 0;
+  cursor: pointer;
+}
+#about .container-fluid .area2 .box div:hover {
+  background-color: black;
+  transition: all .35s ease;
+}
+#about .container-fluid .area2 .box div:hover i {
+  color: white;
+}
+#about .container-fluid .area2 .box .icon {
+  display: block;
+  width: 92px;
+  height: 92px;
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 12px;
+  clip-path: polygon(100% 1%, 100% 82%, 66% 82%, 51% 100%, 35% 83%, 1% 83%, 0 0);
+  z-index: 3;
+  margin: 1px auto;
+}
+#about .container-fluid .area2 .box .icon i {
+  margin: 30px 0px;
+  font-size: 30px;
+}
+#about .container-fluid .area2 .box .text1 {
+  text-transform: uppercase;
+  margin: 20px auto 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+#about .container-fluid .area2 .box .text2 {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#services {
+  background: url(../img/i1.jpg) center center fixed;
+  padding: 55px 0;
+  overflow: hidden;
+  background-position: 50% 29px;
+}
+#services .container-fluid .area1 h1 {
+  text-align: center;
+  width: 100%;
+  line-height: 1.1;
+  padding-top: 60px;
+  font-weight: 600;
+  font-size: 35px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+#services .container-fluid .area1 h4 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 20px 216px;
+  line-height: 20px;
+}
+#services .container-fluid .area2 {
+  padding: 0px 55px;
+}
+#services .container-fluid .area2 .box {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+#services .container-fluid .area2 .box .icon:hover {
+  background-color: white;
+  transition: all .35s ease;
+}
+#services .container-fluid .area2 .box .icon:hover i {
+  color: black;
+}
+#services .container-fluid .area2 .box .visible-text {
+  position: absolute;
+  visibility: hidden;
+  background-color: rgba(128, 128, 128, 0.4);
+  color: lightgray;
+  text-align: center;
+  margin: -125px 11px;
+  padding-right: 10px;
+  cursor: context-menu;
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 400;
+}
+#services .container-fluid .area2 .box .visible-text p {
+  margin-left: 11px;
+}
+#services .container-fluid .area2 .box .icon {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background-color: rg;
+  border: 1px solid white;
+  border-radius: 12px;
+  z-index: 3;
+  margin: 1px auto;
+  color: white;
+}
+#services .container-fluid .area2 .box .icon i {
+  margin: 30px 0px;
+  font-size: 22px;
+}
+#services .container-fluid .area2 .box .text1 {
+  margin: 20px auto 10px;
+  font-size: 19px;
+  font-weight: 100;
+  color: white;
+}
+
+#choose {
+  padding: 55px 0;
+}
+#choose .container-fluid .area1 h1 {
+  text-align: center;
+  width: 100%;
+  line-height: 1.1;
+  padding-top: 60px;
+  font-weight: 100;
+  font-size: 35px;
+  color: #505050;
+  font-family: 'Open Sans', sans-serif;
+}
+#choose .container-fluid .area1 h1 span {
+  font-family: 'Condiment', cursive;
+}
+#choose .container-fluid .area1 h4 {
+  width: 100%;
+  text-align: center;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 20px 216px;
+  line-height: 20px;
+}
+#choose .container-fluid .area1 h4 span {
+  font-weight: 700;
+  color: #399ADC;
+}
+#choose .container-fluid .area2 {
+  padding: 0px 55px;
+}
+#choose .container-fluid .area2 .box {
+  text-align: center;
+  margin: 50px auto 0;
+  cursor: pointer;
+}
+#choose .container-fluid .area2 .box div:hover {
+  transition: all .35s ease;
+}
+#choose .container-fluid .area2 .box div:hover i {
+  color: blue;
+}
+#choose .container-fluid .area2 .box .icon {
+  display: block;
+  width: 92px;
+  height: 92px;
+  position: relative;
+  z-index: 3;
+  margin: 1px auto;
+}
+#choose .container-fluid .area2 .box .icon i {
+  margin: 30px 0px;
+  font-size: 35px;
+}
+#choose .container-fluid .area2 .box .text1 {
+  text-transform: uppercase;
+  margin: 0px auto 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+#choose .container-fluid .area2 .box .text2 {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#backgroundWithText {
+  background: url(../img/i2.jpg) center center fixed;
+  padding: 55px 0;
+  overflow: hidden;
+  background-position: 50% 29px;
+}
+#backgroundWithText .container-fluid .row h1 {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  line-height: 1.4;
+  padding-top: 60px;
+  font-weight: 100;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
+#backgroundWithText .container-fluid .row h1 span {
+  font-weight: 700;
+  color: #3498DB;
+}
+#backgroundWithText .container-fluid .row p {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  color: #cdcdcd;
+}
+
+#quote {
+  padding: 55px 0;
+  background-color: black;
+}
+#quote .container-fluid .row p {
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 auto;
+}
