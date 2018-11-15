@@ -186,61 +186,59 @@
   margin: 20px 216px;
   line-height: 20px;
 }
-#services .container-fluid .area2 {
-  padding: 0px 55px;
+#services .container-fluid .area2 .mydiv {
+  width: 100%;
 }
-#services .container-fluid .area2 .box {
+#services .container-fluid .area2 .mydiv ul {
+  list-style-type: none;
   text-align: center;
-  cursor: pointer;
+}
+#services .container-fluid .area2 .mydiv ul li {
   position: relative;
+  width: 13%;
+  margin: 0% 0.5%;
+  text-align: center;
+  display: inline-block;
+  text-align: center;
 }
-#services .container-fluid .area2 .box .icon:hover {
-  background-color: white;
-  transition: all .35s ease;
-}
-#services .container-fluid .area2 .box .icon:hover i {
-  color: black;
-}
-#services .container-fluid .area2 .box .visible-text {
+#services .container-fluid .area2 .mydiv ul li .hoveredDiv {
   position: absolute;
+  top: -90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  background-color: rgba(96, 96, 96, 0.4);
+  overflow: hidden;
+  border-radius: 5px;
   visibility: hidden;
-  background-color: rgba(128, 128, 128, 0.4);
-  color: lightgray;
-  text-align: center;
-  margin: -125px 11px;
-  padding-right: 10px;
-  cursor: context-menu;
-  border: 1px solid gray;
-  border-radius: 15px;
-  margin-bottom: 10px;
-  font-family: inherit;
-  font-weight: 400;
 }
-#services .container-fluid .area2 .box .visible-text p {
-  margin-left: 11px;
-}
-#services .container-fluid .area2 .box .icon {
-  position: relative;
-  display: block;
-  width: 80px;
-  height: 80px;
-  position: relative;
-  background-color: rg;
-  border: 1px solid white;
-  border-radius: 12px;
-  z-index: 3;
-  margin: 1px auto;
+#services .container-fluid .area2 .mydiv ul li .hoveredDiv p {
+  font-size: 13px;
   color: white;
+  font-weight: 500;
 }
-#services .container-fluid .area2 .box .icon i {
-  margin: 30px 0px;
-  font-size: 22px;
-}
-#services .container-fluid .area2 .box .text1 {
-  margin: 20px auto 10px;
-  font-size: 19px;
-  font-weight: 100;
+#services .container-fluid .area2 .mydiv ul li .iconDiv {
+  margin: 10px;
+  border: 1px solid;
+  display: inline-block;
+  width: 43%;
+  padding: 15%;
+  border-radius: 17px;
   color: white;
+  cursor: pointer;
+}
+#services .container-fluid .area2 .mydiv ul li .iconDiv span {
+  font-size: 23px;
+}
+#services .container-fluid .area2 .mydiv ul li:hover .hoveredDiv {
+  visibility: visible;
+}
+#services .container-fluid .area2 .mydiv ul li:hover .iconDiv {
+  border: none;
+  color: black;
+  background-color: white;
 }
 
 #choose {
@@ -349,4 +347,261 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0 auto;
+}
+
+#portfolio {
+  padding: 55px 0;
+}
+#portfolio .container-fluid .area1 h1 {
+  text-align: center;
+  width: 100%;
+  line-height: 1.1;
+  padding-top: 60px;
+  font-weight: 100;
+  font-size: 35px;
+  color: #505050;
+  font-family: 'Condiment', cursive;
+}
+#portfolio .container-fluid .area1 h1 span {
+  font-family: 'Condiment', cursive;
+}
+#portfolio .container-fluid .area1 h4 {
+  width: 100%;
+  text-align: center;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 20px 216px;
+  line-height: 20px;
+}
+#portfolio .container-fluid .area1 h4 span {
+  font-weight: 700;
+  color: #505050;
+}
+#portfolio .container-fluid .area2 {
+  width: 100%;
+  text-align: center;
+  margin: 15px auto 30px;
+}
+#portfolio .container-fluid .area2 .menu {
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+#portfolio .container-fluid .area2 .menu:hover {
+  background: #313131;
+  color: white;
+  transition: all .35s ease;
+}
+#portfolio .container-fluid .area2 .menu li {
+  text-transform: uppercase;
+  font-size: 11px;
+  border: 1px solid #313131;
+  color: #505050;
+  margin: 5px;
+  padding: 6px 13px;
+}
+#portfolio .container-fluid .area2 .menu li:hover {
+  background: #313131;
+  color: white;
+  transition: all .35s ease;
+  cursor: pointer;
+  border: 1px solid white;
+}
+#portfolio .container-fluid .area3 .box {
+  text-align: center;
+  margin: 7px 19px;
+  cursor: pointer;
+}
+#portfolio .container-fluid .area3 .box .img {
+  width: 230px;
+  border: 1px solid #a1a1a1;
+}
+#portfolio .container-fluid .area3 .box .img a img {
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+#portfolio .container-fluid .area3 .box .img .text {
+  padding: 16px;
+  text-align: left;
+  box-sizing: border-box;
+}
+#portfolio .container-fluid .area3 .box .img .text .work {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  color: #9a9a9a;
+  text-transform: uppercase;
+}
+#portfolio .container-fluid .area3 .box .img .text .design {
+  color: #9a9a9a;
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#accordionMenu {
+  background: url(../img/i4.jpg) center center fixed;
+  padding: 55px 0;
+  overflow: hidden;
+  background-position: 50% 29px;
+}
+#accordionMenu .container-fluid .row .iphone {
+  height: auto;
+  background: url(../img/iphone.png) top no-repeat;
+  z-index: 2;
+  height: 525px;
+}
+#accordionMenu .container-fluid .row .accordion-text {
+  text-align: left;
+  z-index: 1;
+}
+#accordionMenu .container-fluid .row .accordion-text #accordion .card .card-header h5 a {
+  font-size: 15px;
+  color: #494949;
+}
+#accordionMenu .container-fluid .row .accordion-text #accordion .card .card-header h5 a:hover {
+  color: #3498DB;
+}
+#accordionMenu .container-fluid .row .accordion-text #accordion .card #collapseOne .card-body {
+  font-size: 14px;
+}
+#accordionMenu .container-fluid .row .accordion-text #accordion .card #collapseTwo .card-body {
+  font-size: 14px;
+}
+#accordionMenu .container-fluid .row .accordion-text #accordion .card #collapseThree .card-body {
+  font-size: 14px;
+}
+#accordionMenu .container-fluid .row .accordion-text #accordion .card #collapseFore .card-body {
+  font-size: 14px;
+}
+#accordionMenu .container-fluid .row .accordion-text #accordion .card #collapseFive .card-body {
+  font-size: 14px;
+}
+#accordionMenu .container-fluid .row h1 {
+  font-weight: 400;
+  color: #505050;
+  text-align: left;
+}
+#accordionMenu .container-fluid .row h1 .special-font {
+  color: #3498db;
+  font-size: 40px;
+  font-family: 'Condiment', cursive;
+}
+#accordionMenu .container-fluid .row h4 {
+  font-weight: 400;
+  text-align: left;
+  line-break: 20px;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  letter-spacing: 1px;
+}
+#accordionMenu .container-fluid .row h4 span {
+  font-weight: 700;
+  color: #3498db;
+}
+
+#team {
+  padding: 55px 0;
+}
+#team .container-fluid .area1 h1 {
+  text-align: center;
+  width: 100%;
+  line-height: 1.1;
+  padding-top: 60px;
+  font-weight: 100;
+  font-size: 35px;
+  color: #505050;
+  font-family: 'Open Sans', sans-serif;
+}
+#team .container-fluid .area1 h1 span {
+  font-weight: 500;
+  font-family: 'Condiment', cursive;
+}
+#team .container-fluid .area1 h4 {
+  width: 100%;
+  text-align: center;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 20px 216px;
+  line-height: 20px;
+}
+#team .container-fluid .area1 h4 span {
+  font-weight: 700;
+  color: #494949;
+}
+#team .area2 {
+  padding: 0px 55px;
+}
+#team .area2 .box {
+  text-align: center;
+  margin: 50px auto 0;
+  cursor: pointer;
+}
+#team .area2 .box .img {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+#team .area2 .box .text {
+  visibility: visible;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  padding: 15px;
+  top: 100%;
+  margin: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.6);
+}
+#team .area2 .box .text:hover {
+  top: 0;
+  transition: all 0.4s;
+  visibility: visible;
+}
+#team .area2 .box .text .text-inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#team .area2 .box .text .text-inner .name-surname {
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#team .area2 .box .text .text-inner .job {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #399ADC;
+}
+#team .area2 .box .text .text-inner .description {
+  color: #d7d7d7;
+  font-size: 13px;
+  margin: 0 0 5px;
+}
+#team .area2 .box .text .text-inner .icons {
+  margin: 10px auto 0;
+}
+#team .area2 .box .text .text-inner .icons a {
+  color: white;
+  margin: 5px 5px;
+}
+#team .area2 .box .text .text-inner .icons a:hover {
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px 5px;
 }

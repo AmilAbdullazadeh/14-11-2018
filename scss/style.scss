@@ -250,74 +250,71 @@
         }
 
         .area2 {
-            padding: 0px 55px;
+            .mydiv {
+                width: 100%;
 
-            .box {
-                text-align: center;
-                cursor: pointer;
-                position: relative;
-
-                .icon:hover {
-                    background-color: white;
-                    transition: all .35s ease;
-
-                    i {
-                        color: black;
-                    }
-
-
-                }
-
-                .visible-text {
-                    position: absolute;
-                    visibility: hidden;
-                    background-color: rgba(128, 128, 128, 0.4);
-                    color: lightgray;
+                ul {
+                    list-style-type: none;
                     text-align: center;
-                    margin: -125px 11px;
-                    padding-right: 10px;
-                    cursor: context-menu;
-                    border: 1px solid gray;
-                    border-radius: 15px;
-                    margin-bottom: 10px;
-                    font-family: inherit;
-                    font-weight: 400;
 
-                    p {
-                        margin-left: 11px;
+                    li {
+                        position: relative;
+                        width: 13%;
+                        margin: 0% 0.5%;
+                        text-align: center;
+                        display: inline-block;
+                        text-align: center;
+
+                        .hoveredDiv {
+                            position: absolute;
+                            top: -90%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 100%;
+                            height: auto;
+                            padding: 2%;
+                            background-color: rgba(96,96,96, 0.4);
+                           
+                            overflow: hidden;
+                            border-radius: 5px;
+                            visibility: hidden;
+
+                            p {
+                                font-size: 13px;
+                                color: white;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .iconDiv {
+                            margin: 10px;
+                            border: 1px solid;
+                            display: inline-block;
+                            width: 43%;
+                            padding: 15%;
+                            border-radius: 17px;
+                            color: white;
+                            cursor: pointer;
+
+                            span {
+                                font-size: 23px;
+                            }
+                        }
+
+                        &:hover {
+                            .hoveredDiv {
+                                visibility: visible;
+                                // transition: all 0.4s ease;
+                            }
+
+                            .iconDiv {
+                                border: none;
+                                    color: black;
+                                    background-color: white;
+                                
+                            }
+                        }
                     }
-
-                    // .visible-text:hover p {
-                    //     visibility: visible;
-                    // }
-                }
-
-                .icon {
-                    position: relative;
-                    display: block;
-                    width: 80px;
-                    height: 80px;
-                    position: relative;
-                    background-color: rg;
-                    border: 1px solid white;
-                    border-radius: 12px;
-                    z-index: 3;
-                    margin: 1px auto;
-                    color: white;
-
-
-
-                    i {
-                        margin: 30px 0px;
-                        font-size: 22px;
-                    }
-                }
-
-                .text1 {
-                    margin: 20px auto 10px;
-                    font-size: 19px;
-                    font-weight: 100;
-                    color: white;
                 }
             }
         }
@@ -467,4 +464,360 @@
         }
     }
 
+}
+
+#portfolio {
+    padding: 55px 0;
+
+    .container-fluid {
+        .area1 {
+            h1 {
+                text-align: center;
+                width: 100%;
+                line-height: 1.1;
+                padding-top: 60px;
+                font-weight: 100;
+                font-size: 35px;
+                color: #505050;
+                font-family: 'Condiment', cursive;
+
+                span {
+                    font-family: 'Condiment', cursive;
+                }
+            }
+
+            h4 {
+                width: 100%;
+                text-align: center;
+                color: #505050;
+                font-size: 15px;
+                font-weight: 100;
+                margin: 20px 216px;
+                line-height: 20px;
+
+                span {
+                    font-weight: 700;
+                    color: #505050;
+                }
+            }
+        }
+
+        .area2 {
+            width: 100%;
+            text-align: center;
+            margin: 15px auto 30px;
+
+            .menu {
+                display: flex;
+                margin: 0 auto;
+                list-style: none;
+                margin-bottom: 10px;
+                position: relative;
+
+                &:hover {
+                    background: #313131;
+                    color: white;
+                    transition: all .35s ease;
+                }
+
+                li {
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    border: 1px solid #313131;
+                    color: #505050;
+                    margin: 5px;
+                    padding: 6px 13px;
+
+                    &:hover {
+                        background: #313131;
+                        color: white;
+                        transition: all .35s ease;
+                        cursor: pointer;
+                        border: 1px solid white;
+                    }
+                }
+            }
+        }
+
+
+
+        .area3 {
+            .box {
+                text-align: center;
+                margin: 7px 19px;
+                cursor: pointer;
+
+                .img {
+                    width: 230px;
+                    border: 1px solid #a1a1a1;
+
+                    a {
+                        img {
+                            background-size: cover;
+
+                            width: 100%;
+                            height: auto;
+                        }
+
+                    }
+
+                    .text {
+                        padding: 16px;
+                        text-align: left;
+                        box-sizing: border-box;
+
+                        .work {
+                            margin: 0;
+                            font-weight: 400;
+                            font-size: 15px;
+                            color: #9a9a9a;
+                            text-transform: uppercase;
+                        }
+
+                        .design {
+                            color: #9a9a9a;
+                            margin: 0;
+                            font-weight: 400;
+                            font-size: 13px;
+
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+#accordionMenu {
+    background: url(../img/i4.jpg) center center fixed;
+    padding: 55px 0;
+    overflow: hidden;
+    background-position: 50% 29px;
+
+    .container-fluid {
+        .row {
+            .iphone {
+                height: auto;
+                background: url(../img/iphone.png) top no-repeat;
+                z-index: 2;
+                height: 525px;
+            }
+
+            .accordion-text {
+                text-align: left;
+                z-index: 1;
+
+                #accordion {
+                    .card {
+                        .card-header {
+                            h5 {
+                                a {
+                                    font-size: 15px;
+                                    color: #494949;
+
+                                    &:hover {
+                                        color: #3498DB;
+                                    }
+
+                                }
+                            }
+
+                        }
+
+                        #collapseOne {
+                            .card-body {
+                                font-size: 14px;
+                            }
+                        }
+
+                        #collapseTwo {
+                            .card-body {
+                                font-size: 14px;
+                            }
+                        }
+
+                        #collapseThree {
+                            .card-body {
+                                font-size: 14px;
+                            }
+                        }
+
+                        #collapseFore {
+                            .card-body {
+                                font-size: 14px;
+                            }
+                        }
+
+                        #collapseFive {
+                            .card-body {
+                                font-size: 14px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            h1 {
+                font-weight: 400;
+                color: #505050;
+                text-align: left;
+
+                .special-font {
+                    color: #3498db;
+                    font-size: 40px;
+                    font-family: 'Condiment', cursive;
+                }
+            }
+
+            h4 {
+                font-weight: 400;
+                text-align: left;
+                line-break: 20px;
+                font-size: 15px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-right: 100px;
+                letter-spacing: 1px;
+
+                span {
+                    font-weight: 700;
+                    color: #3498db;
+                }
+            }
+
+        }
+    }
+}
+
+#team {
+    padding: 55px 0;
+
+    .container-fluid {
+        .area1 {
+            h1 {
+                text-align: center;
+                width: 100%;
+                line-height: 1.1;
+                padding-top: 60px;
+                font-weight: 100;
+                font-size: 35px;
+                color: #505050;
+                font-family: 'Open Sans', sans-serif;
+
+                span {
+                    font-weight: 500;
+                    font-family: 'Condiment', cursive;
+                }
+            }
+
+            h4 {
+                width: 100%;
+                text-align: center;
+                color: #505050;
+                font-size: 15px;
+                font-weight: 100;
+                margin: 20px 216px;
+                line-height: 20px;
+
+                span {
+                    font-weight: 700;
+                    color: #494949;
+                }
+            }
+        }
+    }
+
+    .area2 {
+        padding: 0px 55px;
+
+        .box {
+            text-align: center;
+            margin: 50px auto 0;
+            cursor: pointer;
+
+            .img {
+                display: block;
+                width: 100%;
+                height: auto;
+                z-index: 2;
+            }
+
+            .text {
+                visibility: visible;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                height: 100%;
+                padding: 15px;
+                top: 100%;
+                margin: 0;
+                z-index: 3;
+                background: rgba(0, 0, 0, 0.6);
+
+                &:hover {
+                    top: 0;
+                    transition: all 0.4s;
+                    visibility: visible;
+                }
+
+                .text-inner {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    .name-surname {
+                        color: white;
+                        margin-top: 0;
+                        padding-top: 0;
+                        font-size: 30px;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                    }
+
+                    .job {
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        color: #399ADC;
+                    }
+
+                    .description {
+                        color: #d7d7d7;
+                        font-size: 13px;
+                        margin: 0 0 5px;
+                    }
+
+                    .icons {
+                        margin: 10px auto 0;
+
+
+
+                        a {
+                            color: white;
+                            margin: 5px 5px;
+
+                            &:hover {
+                                border: 1px solid white;
+                                color: black;
+                                background-color: white;
+                                border-radius: 5px;
+                                margin: 5px 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+
+        }
+    }
 }
