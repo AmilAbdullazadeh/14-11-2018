@@ -48,6 +48,10 @@
     }
 }
 
+.bottom-0 {
+    bottom: initial !important;
+}
+
 #home {
     background: url(../img/slide2.jpg) center center fixed;
     padding: 55px 0;
@@ -273,8 +277,8 @@
                             width: 100%;
                             height: auto;
                             padding: 2%;
-                            background-color: rgba(96,96,96, 0.4);
-                           
+                            background-color: rgba(96, 96, 96, 0.4);
+
                             overflow: hidden;
                             border-radius: 5px;
                             visibility: hidden;
@@ -309,9 +313,9 @@
 
                             .iconDiv {
                                 border: none;
-                                    color: black;
-                                    background-color: white;
-                                
+                                color: black;
+                                background-color: white;
+
                             }
                         }
                     }
@@ -442,9 +446,13 @@
                 font-size: 13px;
                 color: #cdcdcd;
             }
+
+            .img-src {
+                width: 100%;
+                text-align: center;
+            }
         }
     }
-
 }
 
 #quote {
@@ -745,10 +753,18 @@
                 width: 100%;
                 height: auto;
                 z-index: 2;
+
+                &:hover {
+                    .text {
+                        top: 0;
+                        transition: all 0.4s;
+                        visibility: hidden;
+                    }
+                }
             }
 
             .text {
-                visibility: visible;
+                visibility: hidden;
                 position: absolute;
                 width: 100%;
                 left: 0;
@@ -759,11 +775,7 @@
                 z-index: 3;
                 background: rgba(0, 0, 0, 0.6);
 
-                &:hover {
-                    top: 0;
-                    transition: all 0.4s;
-                    visibility: visible;
-                }
+
 
                 .text-inner {
                     position: relative;
@@ -795,8 +807,6 @@
                     .icons {
                         margin: 10px auto 0;
 
-
-
                         a {
                             color: white;
                             margin: 5px 5px;
@@ -813,11 +823,262 @@
                 }
             }
 
+        }
+    }
+}
+
+#retina {
+    padding: 55px 0;
+
+    .container-fluid {
+        .area1 {
+            h1 {
+                text-align: center;
+                width: 100%;
+                line-height: 1.1;
+                padding-top: 60px;
+                font-weight: 600;
+                font-size: 35px;
+                color: #505050;
+
+                span {
+                    font-weight: 600;
+                    color: #3498db;
+                }
+            }
+
+            h4 {
+                width: 100%;
+                text-align: center;
+                color: #505050;
+                font-size: 15px;
+                font-weight: 100;
+                margin: 20px 216px;
+                line-height: 20px;
+
+                span {
+                    font-weight: 700;
+                    color: #399ADC;
+                }
+            }
+
+            .area1-img {
+                background: url(../img/mac.png) center center no-repeat;
+                background-size: 100%;
+                width: 100%;
+                height: auto;
+                margin: 70px auto;
+                visibility: visible;
+                max-width: 1164px;
+                min-height: 335px;
+            }
+        }
+
+        .facts {
+            padding: 55px 80px;
+
+            .fact {
+                height: 100px;
+                padding: 0;
+
+                .fact-icon {
+                    display: block;
+                    float: left;
+                    background: #2a2a2a;
+                    width: 35%;
+                    height: 100px;
+                    text-align: center;
+                    position: relative;
+
+                    i {
+                        color: white;
+                        font-size: 45px;
+                        line-height: 105px;
+                    }
+                }
+
+                .fact-number {
+                    float: left;
+                    width: 65%;
+                    color: #696969;
+
+                    h1 {
+                        font-size: 55px;
+                        margin-top: 6px;
+                        padding-top: 0;
+                        margin-bottom: 5px;
+                        font-weight: 100;
+                        text-align: center;
+                    }
+
+                    h3 {
+                        font-size: 15px;
+                        margin-top: 0;
+                        padding-top: 0;
+                        text-transform: uppercase;
+                        font-weight: 100;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#video {
+    .wrapper {
+        position: relative;
+        z-index: 0;
+        min-width: 100%;
+        min-height: 100%;
+        left: 0px;
+        top: 0px;
+        overflow: hidden;
+        backface-visibility: hidden;
+        opacity: 1;
+
+        video {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .button {
+            text-align: center;
+            background-color: none;
+            width: 100%;
+            position: absolute;
+            top: 43%;
+
+            img {
+                height: auto;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                margin-top: 15px;
+                color: white;
+                font-family: fantasy;
+            }
+        }
+    }
+}
+
+#tables {
+    padding: 55px 0;
+
+    .container-fluid {
+        .area1 {
+            h1 {
+                text-align: center;
+                width: 100%;
+                line-height: 1.1;
+                padding-top: 60px;
+                font-weight: 600;
+                font-size: 35px;
+                color: #505050;
+
+                span {
+                    font-weight: 700;
+                    color: #505050;
+                }
+            }
+
+            h4 {
+                width: 100%;
+                text-align: center;
+                color: #505050;
+                font-size: 15px;
+                font-weight: 100;
+                margin: 20px 216px;
+                line-height: 20px;
+
+                span {
+                    font-weight: 700;
+                    color: #399ADC;
+                }
+            }
 
 
+        }
 
+        .area2 {
+            padding: 50px 70px;
 
+            .box {
+                .card {
+                    .active {
+                        background: #3598DB;
+                        color: white;
+                    }
 
+                    .card-text {
+                        margin-top: 17px;
+                        width: 100%;
+                        text-align: center;
+                        color: white;
+                        font-size: 27px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+
+                    .card-header {
+                        width: 100%;
+                        text-align: center;
+                        color: black;
+                        font-size: 23px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-style: italic;
+                        line-height: 20px;
+
+                        small {
+                            font-size: 13px;
+                            color: gray;
+
+                        }
+                    }
+
+                    .card-footer {
+                        font-style: italic;
+                        width: 100%;
+                        text-align: center;
+                        color: #737373;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        font-family: 'Times New Roman',
+                            Times, ;
+
+                        span {
+                            color: #3498db;
+                            text-align: center;
+                            width: 100%;
+                            font-size: 15px;
+                            font-weight: 600;
+                            font-style: italic;
+                        }
+
+                        .btn {
+                            background-color: #414141;
+                            border: 1px solid;
+                            font-size: 15px;
+                            padding: 8px 26px;
+                            font-family: sans-serif;
+                            font-style: initial;
+                            font-weight: 600;
+                            color: white;
+                            border-radius: 0;
+
+                            &:hover {
+                                background: #3598DB;
+                                color: white;
+                                transition: all .35s ease;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

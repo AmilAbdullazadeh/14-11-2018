@@ -33,6 +33,10 @@
   color: white;
 }
 
+.bottom-0 {
+  bottom: initial !important;
+}
+
 #home {
   background: url(../img/slide2.jpg) center center fixed;
   padding: 55px 0;
@@ -336,6 +340,10 @@
   font-size: 13px;
   color: #cdcdcd;
 }
+#backgroundWithText .container-fluid .row .img-src {
+  width: 100%;
+  text-align: center;
+}
 
 #quote {
   padding: 55px 0;
@@ -550,8 +558,13 @@
   height: auto;
   z-index: 2;
 }
+#team .area2 .box .img:hover .text {
+  top: 0;
+  transition: all 0.4s;
+  visibility: hidden;
+}
 #team .area2 .box .text {
-  visibility: visible;
+  visibility: hidden;
   position: absolute;
   width: 100%;
   left: 0;
@@ -561,11 +574,6 @@
   margin: 0;
   z-index: 3;
   background: rgba(0, 0, 0, 0.6);
-}
-#team .area2 .box .text:hover {
-  top: 0;
-  transition: all 0.4s;
-  visibility: visible;
 }
 #team .area2 .box .text .text-inner {
   position: relative;
@@ -604,4 +612,213 @@
   background-color: white;
   border-radius: 5px;
   margin: 5px 5px;
+}
+
+#retina {
+  padding: 55px 0;
+}
+#retina .container-fluid .area1 h1 {
+  text-align: center;
+  width: 100%;
+  line-height: 1.1;
+  padding-top: 60px;
+  font-weight: 600;
+  font-size: 35px;
+  color: #505050;
+}
+#retina .container-fluid .area1 h1 span {
+  font-weight: 600;
+  color: #3498db;
+}
+#retina .container-fluid .area1 h4 {
+  width: 100%;
+  text-align: center;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 20px 216px;
+  line-height: 20px;
+}
+#retina .container-fluid .area1 h4 span {
+  font-weight: 700;
+  color: #399ADC;
+}
+#retina .container-fluid .area1 .area1-img {
+  background: url(../img/mac.png) center center no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+  margin: 70px auto;
+  visibility: visible;
+  max-width: 1164px;
+  min-height: 335px;
+}
+#retina .container-fluid .facts {
+  padding: 55px 80px;
+}
+#retina .container-fluid .facts .fact {
+  height: 100px;
+  padding: 0;
+}
+#retina .container-fluid .facts .fact .fact-icon {
+  display: block;
+  float: left;
+  background: #2a2a2a;
+  width: 35%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+#retina .container-fluid .facts .fact .fact-icon i {
+  color: white;
+  font-size: 45px;
+  line-height: 105px;
+}
+#retina .container-fluid .facts .fact .fact-number {
+  float: left;
+  width: 65%;
+  color: #696969;
+}
+#retina .container-fluid .facts .fact .fact-number h1 {
+  font-size: 55px;
+  margin-top: 6px;
+  padding-top: 0;
+  margin-bottom: 5px;
+  font-weight: 100;
+  text-align: center;
+}
+#retina .container-fluid .facts .fact .fact-number h3 {
+  font-size: 15px;
+  margin-top: 0;
+  padding-top: 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+}
+
+#video .wrapper {
+  position: relative;
+  z-index: 0;
+  min-width: 100%;
+  min-height: 100%;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  opacity: 1;
+}
+#video .wrapper video {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#video .wrapper .button {
+  text-align: center;
+  background-color: none;
+  width: 100%;
+  position: absolute;
+  top: 43%;
+}
+#video .wrapper .button img {
+  height: auto;
+}
+#video .wrapper .button h1 {
+  text-transform: uppercase;
+  margin-top: 15px;
+  color: white;
+  font-family: fantasy;
+}
+
+#tables {
+  padding: 55px 0;
+}
+#tables .container-fluid .area1 h1 {
+  text-align: center;
+  width: 100%;
+  line-height: 1.1;
+  padding-top: 60px;
+  font-weight: 600;
+  font-size: 35px;
+  color: #505050;
+}
+#tables .container-fluid .area1 h1 span {
+  font-weight: 700;
+  color: #505050;
+}
+#tables .container-fluid .area1 h4 {
+  width: 100%;
+  text-align: center;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 20px 216px;
+  line-height: 20px;
+}
+#tables .container-fluid .area1 h4 span {
+  font-weight: 700;
+  color: #399ADC;
+}
+#tables .container-fluid .area2 {
+  padding: 50px 70px;
+}
+#tables .container-fluid .area2 .box .card .active {
+  background: #3598DB;
+  color: white;
+}
+#tables .container-fluid .area2 .box .card .card-text {
+  margin-top: 17px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 27px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#tables .container-fluid .area2 .box .card .card-header {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 23px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 20px;
+}
+#tables .container-fluid .area2 .box .card .card-header small {
+  font-size: 13px;
+  color: gray;
+}
+#tables .container-fluid .area2 .box .card .card-footer {
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  color: #737373;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times;
+}
+#tables .container-fluid .area2 .box .card .card-footer span {
+  color: #3498db;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+}
+#tables .container-fluid .area2 .box .card .card-footer .btn {
+  background-color: #414141;
+  border: 1px solid;
+  font-size: 15px;
+  padding: 8px 26px;
+  font-family: sans-serif;
+  font-style: initial;
+  font-weight: 600;
+  color: white;
+  border-radius: 0;
+}
+#tables .container-fluid .area2 .box .card .card-footer .btn:hover {
+  background: #3598DB;
+  color: white;
+  transition: all .35s ease;
 }
