@@ -15,14 +15,19 @@
 #navBar .container-fluid .row .nav-menu .menu-ul {
   list-style: none;
   font-weight: 600;
-  margin: 15px;
+  margin: 5px;
 }
 #navBar .container-fluid .row .nav-menu .menu-ul li {
+  position: relative;
   display: inline-block;
   text-transform: uppercase;
   font-size: 15px;
   padding: 10px 15px;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+#navBar .container-fluid .row .nav-menu .menu-ul li:hover {
+  color: #3498DB;
 }
 #navBar .container-fluid .row .nav-menu .menu-ul li .dropdown-menu a {
   font-weight: 600;
@@ -31,6 +36,19 @@
   transition: all 0.4s ease;
   background-color: black;
   color: white;
+}
+#navBar .container-fluid .row .nav-menu .menu-ul li::before {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background: #3498DB;
+  visibility: hidden;
+}
+#navBar .container-fluid .row .nav-menu .menu-ul li:hover::before {
+  visibility: visible;
 }
 
 .bottom-0 {
@@ -133,7 +151,7 @@
 }
 #about .container-fluid .area2 .box div:hover {
   background-color: black;
-  transition: all .35s ease;
+  transition: all .7s ease;
 }
 #about .container-fluid .area2 .box div:hover i {
   color: white;
@@ -232,6 +250,7 @@
   border-radius: 17px;
   color: white;
   cursor: pointer;
+  transition: all 0.7s ease;
 }
 #services .container-fluid .area2 .mydiv ul li .iconDiv span {
   font-size: 23px;
@@ -283,7 +302,7 @@
   cursor: pointer;
 }
 #choose .container-fluid .area2 .box div:hover {
-  transition: all .35s ease;
+  transition: all .7s ease;
 }
 #choose .container-fluid .area2 .box div:hover i {
   color: blue;
@@ -397,11 +416,12 @@
   list-style: none;
   margin-bottom: 10px;
   position: relative;
+  padding-left: 0px;
 }
 #portfolio .container-fluid .area2 .menu:hover {
   background: #313131;
   color: white;
-  transition: all .35s ease;
+  transition: all .7s ease;
 }
 #portfolio .container-fluid .area2 .menu li {
   text-transform: uppercase;
@@ -411,10 +431,16 @@
   margin: 5px;
   padding: 6px 13px;
 }
+#portfolio .container-fluid .area2 .menu li:first-child {
+  margin-left: 10px;
+}
+#portfolio .container-fluid .area2 .menu li:last-child {
+  margin-right: 10px;
+}
 #portfolio .container-fluid .area2 .menu li:hover {
   background: #313131;
   color: white;
-  transition: all .35s ease;
+  transition: all .7s ease;
   cursor: pointer;
   border: 1px solid white;
 }
@@ -427,10 +453,31 @@
   width: 230px;
   border: 1px solid #a1a1a1;
 }
-#portfolio .container-fluid .area3 .box .img a img {
+#portfolio .container-fluid .area3 .box .img .hover-div {
+  position: relative;
+  overflow: hidden;
+}
+#portfolio .container-fluid .area3 .box .img .hover-div img {
   background-size: cover;
+  transition: all 0.7s ease;
   width: 100%;
   height: auto;
+}
+#portfolio .container-fluid .area3 .box .img .hover-div:hover img {
+  transform: scale(1.1);
+}
+#portfolio .container-fluid .area3 .box .img .hover-div:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.568);
+}
+#portfolio .container-fluid .area3 .box .img .hover-div .overlay {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.7s ease;
 }
 #portfolio .container-fluid .area3 .box .img .text {
   padding: 16px;
@@ -553,34 +600,34 @@
   cursor: pointer;
 }
 #team .area2 .box .img {
+  position: relative;
   display: block;
   width: 100%;
   height: auto;
   z-index: 2;
+  overflow: hidden;
 }
-#team .area2 .box .img:hover .text {
-  top: 0;
-  transition: all 0.4s;
-  visibility: hidden;
+#team .area2 .box .img img {
+  width: 100%;
 }
-#team .area2 .box .text {
-  visibility: hidden;
+#team .area2 .box .img .text {
   position: absolute;
   width: 100%;
   left: 0;
   height: 100%;
   padding: 15px;
-  top: 100%;
+  bottom: -100%;
   margin: 0;
   z-index: 3;
   background: rgba(0, 0, 0, 0.6);
+  transition: all 0.7s linear;
 }
-#team .area2 .box .text .text-inner {
+#team .area2 .box .img .text .text-inner {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-#team .area2 .box .text .text-inner .name-surname {
+#team .area2 .box .img .text .text-inner .name-surname {
   color: white;
   margin-top: 0;
   padding-top: 0;
@@ -588,30 +635,33 @@
   text-transform: uppercase;
   font-weight: 400;
 }
-#team .area2 .box .text .text-inner .job {
+#team .area2 .box .img .text .text-inner .job {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 400;
   color: #399ADC;
 }
-#team .area2 .box .text .text-inner .description {
+#team .area2 .box .img .text .text-inner .description {
   color: #d7d7d7;
   font-size: 13px;
   margin: 0 0 5px;
 }
-#team .area2 .box .text .text-inner .icons {
+#team .area2 .box .img .text .text-inner .icons {
   margin: 10px auto 0;
 }
-#team .area2 .box .text .text-inner .icons a {
+#team .area2 .box .img .text .text-inner .icons a {
   color: white;
   margin: 5px 5px;
 }
-#team .area2 .box .text .text-inner .icons a:hover {
+#team .area2 .box .img .text .text-inner .icons a:hover {
   border: 1px solid white;
   color: black;
   background-color: white;
   border-radius: 5px;
   margin: 5px 5px;
+}
+#team .area2 .box .img:hover .text {
+  bottom: 0%;
 }
 
 #retina {
@@ -820,5 +870,186 @@
 #tables .container-fluid .area2 .box .card .card-footer .btn:hover {
   background: #3598DB;
   color: white;
-  transition: all .35s ease;
+  transition: all .7s ease;
+}
+
+#touch {
+  background: url(../img/i5.jpg) center center fixed;
+  padding: 55px 0;
+  overflow: hidden;
+  background-position: 50% 29px;
+}
+#touch .container-fluid .area1 h1 {
+  text-align: center;
+  width: 100%;
+  line-height: 1.1;
+  padding-top: 60px;
+  font-weight: 600;
+  font-size: 35px;
+  color: white;
+}
+#touch .container-fluid .area1 h1 span {
+  font-weight: 700;
+  color: white;
+}
+#touch .container-fluid .area1 h4 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 20px 216px;
+  line-height: 20px;
+}
+#touch .container-fluid .area2 {
+  width: 100%;
+  margin: 3% 22%;
+  display: flex;
+  position: relative;
+}
+#touch .container-fluid .area2 .area1 {
+  display: inline-block;
+  position: absolute;
+}
+#touch .container-fluid .area2 .area1 .left-form {
+  float: left;
+}
+#touch .container-fluid .area2 .area1 .left-form .form-group {
+  background: none;
+}
+#touch .container-fluid .area2 .area1 .left-form .form-group .form-control {
+  background: #00000000;
+  padding-right: 6.3rem;
+  margin-bottom: 0.7rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0;
+}
+#touch .container-fluid .area2 .area2 {
+  margin: 0% 27%;
+}
+#touch .container-fluid .area2 .area2 .right-form .form-group .form-control {
+  background: #00000000;
+  padding-bottom: 7.37rem;
+  padding-right: 12.4rem;
+  border-radius: 0;
+}
+#touch .container-fluid .area2 .button-send-message {
+  padding-top: 1.1rem;
+  width: 56.5%;
+}
+#touch .container-fluid .area2 .button-send-message .btn {
+  padding: 1rem 20rem;
+  border-radius: 0;
+  transition: all 0.7s ease;
+}
+#touch .container-fluid .area2 .button-send-message .btn:hover {
+  background-color: #3498DB;
+  color: white;
+}
+
+#social-adress {
+  bottom: 0;
+}
+#social-adress .container-fluid .social {
+  text-align: center;
+}
+#social-adress .container-fluid .social .social-a {
+  font-size: 18px;
+  color: #595959;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  margin: 15px auto;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+#social-adress .container-fluid .social .social-a:hover {
+  background: #131313;
+  color: white;
+}
+#social-adress .container-fluid .adress {
+  width: 100%;
+  height: auto;
+  margin: 25px auto 0;
+}
+#social-adress .container-fluid .adress p {
+  margin: 0 0 0;
+  text-align: center;
+}
+#social-adress .container-fluid .adress p .style-a {
+  font-weight: 700;
+  color: #505050;
+}
+#social-adress .container-fluid .adress p span {
+  color: #3498db;
+  font-weight: 700;
+}
+#social-adress .container-fluid .adress p .scroll-up {
+  margin: 30px auto 0;
+  display: inline-block;
+  width: 40px;
+  background: #191919;
+  color: #d1d1d1;
+  font-size: 20px;
+  line-height: 40px;
+  transition: all 0.7s ease;
+}
+#social-adress .container-fluid .adress p .scroll-up:hover {
+  color: #3498db;
+}
+
+.footer {
+  padding: 45px;
+  text-align: center;
+  background: #191919;
+}
+.footer h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 35px;
+  color: white;
+  font-weight: 700;
+}
+.footer p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #8b8b8b;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+.footer p span {
+  color: white;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+.footer p span:hover {
+  color: #3498db;
+}
+
+#spin-scrool {
+  position: fixed;
+  width: 212px;
+  height: auto;
+  top: 150px;
+  min-height: 200px;
+  left: -212px;
+}
+#spin-scrool .panel-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  right: -50px;
+  top: 50%;
+  text-align: center;
+  font-size: 23px;
+  line-height: 47px;
+  cursor: pointer;
+  border: 1px solid #f1f1f1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
